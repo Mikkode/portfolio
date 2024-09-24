@@ -17,21 +17,22 @@ export const socialMedia = [
   //   img: "/link.svg",
   // },
 ];
-
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+    <footer className="w-full pt-20 pb-10 relative z-10" id="contact">
+      {/* Arrière-plan de la grille */}
+      <div className="w-full absolute inset-0 -z-10 transform -translate-y-96">
         <Image
-          src="/footer-grid.svg"
+          src="/footer-grid.svg" // Remplacez par votre image d'arrière-plan
           alt="grid"
-          className="w-full h-full opacity-50 "
+          className="w-full h-auto opacity-100"
+          width={1800}
+          height={1200}
         />
       </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+      <div className="flex flex-col items-center z-20">
+        <h1 className="heading lg:max-w-[45vw] text-center">
           Transforming <span className="text-purple">your </span>digital
           <span className="text-purple"> ideas</span> into reality
         </h1>
@@ -46,9 +47,9 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center z-20">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Mickael
+          Copyright © 2024 Mickaël
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

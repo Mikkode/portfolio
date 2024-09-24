@@ -10,6 +10,8 @@ const workExperience = [
     desc: "Software engineer specialized in developing software for controlling measurement instruments and automating electronic product testing.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    width: 95,
+    height: 87,
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ const workExperience = [
     desc: "Specializing in web development with Next.js through personal freelance projects.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
+    width: 98,
+    height: 97,
   },
 ];
 
@@ -46,6 +50,8 @@ const Experience = () => {
                 src={card.thumbnail}
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"
+                height={card.height}
+                width={card.width}
               />
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">

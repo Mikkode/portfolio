@@ -29,10 +29,10 @@ export default function Approach() {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="bg-pink-900 overflow-hidden"
             colors={[
-              [236, 72, 153],
-              [232, 121, 249],
+              [255, 166, 158],
+              [221, 255, 247],
             ]}
             dotSize={2}
           />
@@ -71,7 +71,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[30rem] h-[14rem] "
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] h-[14rem] "
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
