@@ -1,0 +1,6 @@
+# Allow all bots to explore the site
+User-agent: *
+Allow: /
+
+# Location of the sitemap
+Sitemap: https://carrotpixel.com/sitemap.xml
