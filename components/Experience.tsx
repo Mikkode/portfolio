@@ -26,8 +26,8 @@ const workExperience = [
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
+    <div className="w-full lg:pt-20 md:pt-16 sm:pt-16 pt-16">
+      <h1 className="heading lg:pb-6 md:pb-3 sm:pb-5 pb-5">
         My <span className="text-purple">work experience</span>
       </h1>
 

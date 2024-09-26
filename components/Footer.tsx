@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 relative z-10" id="contact">
       {/* Arrière-plan de la grille */}
-      <div className="w-full absolute inset-0 -z-10 transform -translate-y-96">
+      <div className="w-full absolute inset-0 -z-10 lg:-translate-y-64 md:-translate-y-48 sm:-translate-y-24 -translate-y-12">
         <Image
           src="/footer-grid.svg" // Remplacez par votre image d'arrière-plan
           alt="grid"
