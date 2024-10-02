@@ -3,6 +3,12 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import CarrotSVG from "/public/LOGO_CARROT.svg";
+import Carrot2DWithName from "/public/logo_2D_with_name.png";
+import Carrot2DWithoutName from "/public/logo_2D_without_name.png";
+import Carrot3DWithName from "/public/logo_3D_with_name.png";
+import Carrot3DWithoutName from "/public/logo_3D_without_name.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -42,9 +48,39 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          {/* <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Carrot Pixel
-          </p>
+          </p> */}
+          {/* <img src="/carrot.jpeg" alt="Carotte" width={200} height={200} /> */}
+          {/* <Image
+            src={Carrot2DWithName}
+            // alt={CarrotSVG}
+            // className="lg:w-32 md:w-20 w-16"
+            height={1972 / 4}
+            width={1485 / 4}
+          /> */}
+          <Image
+            src={Carrot2DWithoutName}
+            // alt={CarrotSVG}
+            // className="lg:w-32 md:w-20 w-16"
+            className="pb-10"
+            height={1972 / 4}
+            width={1485 / 4}
+          />
+          {/* <Image
+            src={Carrot3DWithName}
+            // alt={CarrotSVG}
+            // className="lg:w-32 md:w-20 w-16"
+            height={2052 / 4}
+            width={1487 / 4}
+          /> */}
+          {/* <Image
+            src={Carrot3DWithoutName}
+            // alt={CarrotSVG}
+            // className="lg:w-32 md:w-20 w-16"
+            height={1080}
+            width={1080}
+          /> */}
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect

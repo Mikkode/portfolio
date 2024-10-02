@@ -1,9 +1,14 @@
 import Experience from "@/components/Experience";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 import Grid from "@/components/Grid";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import { getDictionary } from "./dictionaries";
+import { Locale } from "./locales";
 import type { Metadata } from "next";
+
+import CarrotSVG from "/public/LOGO_CARROT.svg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Next.js Web Developer - Mickaël | Full-stack Web Development",
@@ -72,42 +77,25 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function Home() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Mickaël",
-    jobTitle: "Full-stack Web Developer",
-    url: "https://carrotpixel.com",
-    sameAs: [
-      "https://www.linkedin.com/in/micka%C3%ABl-warin-4b0275a4/",
-      "https://github.com/mikkode",
-    ],
-    worksFor: {
-      "@type": "Organization",
-      name: "CarrotPixel",
-    },
-    knowsAbout: [
-      "Next.js",
-      "React",
-      "JavaScript",
-      "Python",
-      "Django",
-      "MySQL",
-      "Firebase",
-      "Web Development",
-    ],
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "Your University",
-    },
-  };
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dict = await getDictionary(lang);
 
   return (
     <main className="relative flex bg-black-100 justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
+        {/* <Image
+          src={CarrotSVG}
+          alt={CarrotSVG}
+          // className="lg:w-32 md:w-20 w-16"
+          height={2200}
+          width={3000}
+        /> */}
         <Hero />
-        <Grid />
+        <Grid dict={dict.grid} />
         <Experience />
         <Approach />
         <Footer />

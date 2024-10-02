@@ -1,0 +1,30 @@
+{
+  "grid": {
+    "items": {
+      "item1": {
+        "title": "Je privilégie la collaboration avec les clients, en favorisant une communication ouverte",
+        "description": ""
+      },
+      "item2": {
+        "title": "Flexible avec les fuseaux horaires pour accommoder les clients globaux",
+        "description": ""
+      },
+      "item3": {
+        "title": "Ma pile technologique",
+        "description": "Je m'améliore constamment"
+      },
+      "item4": {
+        "title": "Technologue passionné, motivé par l'innovation et le développement",
+        "description": ""
+      },
+      "item5": {
+        "title": "Actuellement plongé dans le monde de la technologie IA, perfectionnant mes compétences.",
+        "description": "Les coulisses"
+      },
+      "item6": {
+        "title": "Intéressé par une collaboration sur votre prochain projet?",
+        "description": ""
+      }
+    }
+  }
+}

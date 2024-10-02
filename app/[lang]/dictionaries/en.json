@@ -1,0 +1,30 @@
+{
+  "grid": {
+    "items": {
+      "item1": {
+        "title": "I prioritize client collaboration, fostering open communication",
+        "description": ""
+      },
+      "item2": {
+        "title": "Flexible with Time Zones to Accommodate Global Clients",
+        "description": ""
+      },
+      "item3": {
+        "title": "My tech stack",
+        "description": "I constantly improve"
+      },
+      "item4": {
+        "title": "Passionate Technologist Driven by Innovation and Development",
+        "description": ""
+      },
+      "item5": {
+        "title": "Currently diving into the world of AI technology, honing my skills.",
+        "description": "The Inside Scoop"
+      },
+      "item6": {
+        "title": "Interested in Collaborating on Your Next Project?",
+        "description": ""
+      }
+    }
+  }
+}
