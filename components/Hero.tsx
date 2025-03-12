@@ -1,8 +1,16 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import {
+  FaLocationArrow,
+  FaGithub,
+  FaLinkedin,
+  FaFileAlt,
+} from "react-icons/fa";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { NeonGradientCard } from "./magicui/neon-gradient-card";
+import { ShineBorder } from "./magicui/shine-border";
+import { BorderBeam } from "./magicui/border-beam";
 
 const Hero = () => {
   return (
@@ -57,10 +65,69 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Mickaël, a French Next.js Developer based in Japan.
+            Hi! I&apos;m Mickaël, a French Full-Stack Developer.
           </p>
 
-          <a href="#about">
+          {/* Liens sociaux */}
+          <div className="relative mt-10 mb-8 w-auto">
+            <div className="relative flex justify-center items-center overflow-hidden rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 backdrop-blur-md border border-white/20 px-8 py-3">
+              <BorderBeam
+                duration={10}
+                delay={1}
+                size={80}
+                colorFrom="#3b82f6"
+              />
+              <BorderBeam
+                duration={10}
+                delay={6}
+                size={80}
+                colorFrom="#8b5cf6"
+              />
+              <div className="flex gap-12 items-center justify-center z-10">
+                <a
+                  href="https://cv.carrotpixel.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center w-12 h-12 bg-blue-500/20 rounded-full transition-all duration-300 hover:bg-blue-500/40"
+                  aria-label="CV"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaFileAlt
+                    className="text-white group-hover:text-white transition-colors duration-300 transform group-hover:scale-110 z-10"
+                    size={24}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mickaël-warin-4b0275a4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center w-12 h-12 bg-purple-500/20 rounded-full transition-all duration-300 hover:bg-purple-500/40"
+                  aria-label="LinkedIn"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaLinkedin
+                    className="text-white group-hover:text-white transition-colors duration-300 transform group-hover:scale-110 z-10"
+                    size={24}
+                  />
+                </a>
+                <a
+                  href="https://github.com/Mikkode/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center w-12 h-12 bg-indigo-500/20 rounded-full transition-all duration-300 hover:bg-indigo-500/40"
+                  aria-label="GitHub"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-400 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <FaGithub
+                    className="text-white group-hover:text-white transition-colors duration-300 transform group-hover:scale-110 z-10"
+                    size={24}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#about" className="mt-4">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
