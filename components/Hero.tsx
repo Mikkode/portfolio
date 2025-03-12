@@ -8,8 +8,6 @@ import {
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { NeonGradientCard } from "./magicui/neon-gradient-card";
-import { ShineBorder } from "./magicui/shine-border";
 import { BorderBeam } from "./magicui/border-beam";
 
 const Hero = () => {
