@@ -4,8 +4,9 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+// Importation dynamique de Lottie pour éviter les erreurs SSR
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import { cn } from "@/lib/cn";
 
@@ -198,7 +199,7 @@ export const BentoGridItem = ({
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
+                otherClasses="bg-[#161A31]!"
               />
             </div>
           )}

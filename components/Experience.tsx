@@ -6,7 +6,7 @@ import { Button } from "./ui/MovingBorders";
 const workExperience = [
   {
     id: 1,
-    title: "8 years Software Engineer",
+    title: "9 years Software Engineer",
     desc: "Software engineer specialized in developing software for controlling measurement instruments and automating electronic product testing.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
