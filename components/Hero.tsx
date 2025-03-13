@@ -9,6 +9,7 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { BorderBeam } from "./magicui/border-beam";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -46,11 +47,17 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-5 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Carrot Pixel
-          </p>
+          {/* Carrot Pixel */}
+          <Image
+            src="/favicon.png"
+            alt="Carrot Pixel"
+            width={150}
+            height={20}
+            className="w-[100px] sm:w-[120px] md:w-[135px] lg:w-[150px] h-auto lg:mb-5 sm:mb-2 md:mb-3 animate-float"
+            priority
+          />
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect

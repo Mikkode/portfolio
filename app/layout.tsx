@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Mickael's Portfolio",
   description: "Modern & Minimalist portfolio",
+  icons: {
+    icon: "/favicon.png",
+    // Vous pouvez également ajouter d'autres formats
+    // apple: '/apple-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -19,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body className={inter.className}>
         {/* Google Analytics Script */}
         <Script
